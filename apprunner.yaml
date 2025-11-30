@@ -1,0 +1,17 @@
+version : 1.0
+runtime : python3
+build:
+  commands:
+    build:
+      - pip install -r requirements.txt -t .
+run:
+  commands: python main.py
+  network:
+    port: 8080
+  # env:
+  #   - name: DYNAMODB_TABLE
+  #     value: your_table_name
+  #   - name: DYNAMODB_GSI_EMAIL
+  #     value: your_gsi_name
+  #   - name: DYNAMODB_COUNTER_TABLE
+  #     value: your_counter_table_name
