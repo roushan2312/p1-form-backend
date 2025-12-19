@@ -3,7 +3,7 @@ runtime : python3
 build:
   commands:
     build:
-      - pip install -r requirements.txt -t .
+      - pip install -r requirements.txt
 run:
   commands: python main.py
   network:
